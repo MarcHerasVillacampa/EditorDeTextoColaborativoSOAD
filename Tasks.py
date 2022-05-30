@@ -61,13 +61,6 @@ class Task:
         self.repetitions=args[3]
         self.timestamp=time.time()
         # print(f"CONSTRUCTORA TASK {self.id}, {self.path}, {self.action}, {self.content}")
-    
-    # def __init__(self,args):
-    #     # self.id = id
-    #     self.pointer=args[0]
-    #     self.action=args[1]
-    #     self.amount=args[2]
-    #     # self.timestamp=time.time()
 
     def getFile(self):
         return self.path
