@@ -35,7 +35,7 @@ def listen():
     print("Se ha cerrado la conexion")
 
 def handle_updates():
-    connected = True #hay que mirar como comprobar si hay una conexion activa.
+    connected = True 
     print("EJECUTANDO HANDLE UPDATES")
     print("CONEXION ",connected)
     print("ENVIADO UPDATE")
