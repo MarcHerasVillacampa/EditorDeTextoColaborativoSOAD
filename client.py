@@ -10,7 +10,6 @@ from Tasks import *
 HEADER = 64
 PORT = 5050
 DISCONNECT_MESSAGE = "!DISCONNECT"
-#SERVER = "192.168.56.1"
 CLIENT = socket.gethostbyname(socket.gethostname())
 SERVER =  "192.168.43.135"
 ADDR = (SERVER, PORT)
