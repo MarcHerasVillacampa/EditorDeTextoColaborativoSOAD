@@ -77,10 +77,6 @@ def executeTask():
             insertInTxt("prueba.txt",task.pointer,task.content)
         elif task.action =="d":
             ereaseInTxt("prueba.txt",task.pointer,task.repetitions)
-        
-        
-            
-
         tasks.nextTaskCompleted()
     sleep(PERIOD)
 
