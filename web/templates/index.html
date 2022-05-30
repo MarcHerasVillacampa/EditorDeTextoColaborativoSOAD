@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link href="../static/style.css" rel="stylesheet" />
+    <!-- js -->
+    <script src="/eel.js"></script>
+    <script src="../static/main.js"></script>
+    <!-- <script src="../static/style.js"></script> -->
+
+    <title>Editor colaborativo👨‍💻</title>
+  </head>
+  <body>
+    <div class="g-container">
+      <div class="container" id="container">
+        <div class="head">
+          <h1 id="title">Editor colaborativo</h1>
+          <button class="animated-word" download="">Crear Documento</button>
+          <!-- <nav class="menu">
+                    <a href="/html/">Nuevo archivo</a>
+                    <a href="/css/">CSS</a>
+                    <a href="/js/">JavaScript</a>
+                    <a href="/python/">Python</a>
+                </nav> -->
+        </div>
+        <form class="txt-form" method="POST">
+          <textarea
+            name="text"
+            id="text"
+            class="txt-area"
+            placeholder="¡Escribe aquí! 👨‍💻"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '¡Escribe aquí! 👨‍💻'"
+            oninput="write2()"
+          ></textarea>
+        </form>
+        <div id="debugger"></div>
+      </div>
+    </div>
+  </body>
+</html>
