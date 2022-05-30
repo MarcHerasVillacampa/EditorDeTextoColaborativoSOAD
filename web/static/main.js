@@ -55,7 +55,7 @@ function write2()
     }
     else
     {
-        // alert("eeeepa"+pointer+" "+lastPointer);
+        // alert(pointer+" "+lastPointer);
 
         if(pointer!=0)
         {
