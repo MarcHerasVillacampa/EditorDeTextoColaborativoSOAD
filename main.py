@@ -43,11 +43,9 @@ def erease(pointer,action):
         task = Task([pointer,action,"",1])
         tasks.addTask(task) 
     else:
-        print("sdiuhasiuhasiudhbasiudahiuashoiuash{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{")
-        #si el puntero apunta a la siguiente posición no hace falta hacer ningun cambio de cursor
         if pointer == lastPointer-1:
             print("se borra de forma secuencial",tasks.getNextTask().content)
-            tasks.getNextTask().amount += 1#cuidado puede petar aquí muy facilmente
+            tasks.getNextTask().amount += 1
         else:
             task = Task([pointer,action,"",1])
             tasks.addTask(task)   
@@ -61,20 +59,14 @@ def edit(action,pointer,text):
     print("insert---------->",text)
 
     if(not tasks.AreTheretTasksOfType(action)):
-        print("--------------------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",time.time())
         task = Task([pointer,action,text,0])
-        # print(task.toArray())
         tasks.addTask(task) 
     else:
-        #si el puntero apunta a la siguiente posición no hace falta hacer ningun cambio de cursor
         if pointer == lastPointer+1:
             print("se escribe de forma secuencial", pointer, " ", lastPointer)
             tasks.getNextTask().content += text
-            print("Contenido de la task: [[[[[[[[[[[[[[[[[[---------------------]]]]]]]]]]]]]]]]]]",tasks.getNextTask().content)
             
-        #si el cursor ya no incrementa de forma consecutiva entonces añadimos una tarea
         else:
-            print("NOSESCRBIE DE FORMOWSDMAODAMOP0ASDIOADSIASDIKJB", pointer, " ", lastPointer)
             task = Task([pointer,action,text,0])
             tasks.addTask(task)   
             tasks.getNextTask().print()
